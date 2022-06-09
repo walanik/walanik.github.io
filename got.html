@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+             {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  overflow: hidden;
+  background-color: #dcedc8;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+nav a:hover {
+  background-color: #8bc34a;
+}
+
+nav a.active {
+  background-color: #8bc34a;
+  color: white;
+}
+
+nav .search-container {
+  float: right;
+}
+
+nav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+nav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #8bc34a;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+nav .search-container button:hover {
+  background: #bdbdbd;
+}
+
+@media screen and (max-width: 600px) {
+  nav .search-container {
+    float: none;
+  }
+  nav a, nav input[type=text], nav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  nav input[type=text] {
+    border: 1px solid #689f38;  
+  }
+}
+#okno {
+        width: 300px;
+        height: 50px;
+        text-align: center;
+        padding: 15px;
+        border: 3px solid #0000cc;
+        border-radius: 10px;
+        color: #0000cc;
+        display: none;
+      }
+      #okno:target {display: block;}
+    </style>
+</head>
+<body background="D:\компромат на фсб\шапка.jpg">
+    <center><h1 >Походы </h1></center>
+    <a href="#okno" > <img src="https://toppng.com/uploads/preview/erv-logo-neon-genesis-evangelion-nerv-logo-11562884362pnxyelfyzj.png" width="60px"height="60px"></a>
+    <nav>
+        <a class="active" href="bud.html#mos" target="3">Главная</a>
+        <a  href= "sl.html" target="3">Услуги</a>
+        <a href="bud.html#fl" target="3">Контакты</a>
+        <div class="search-container">
+        <form action="action.php">
+            <input type="text" placeholder="Поиск.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        </div>
+      </nav>
+    <div id="okno">
+     не ешь желтый снег
+    </div>
+    
+    
+</body>
+</html>
